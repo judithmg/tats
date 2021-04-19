@@ -1,0 +1,55 @@
+@import 'index.scss'; //input with heading
+
+input {
+    font-family: $Roboto;
+    font-weight: 700;
+    color: $charcoalsemi;
+    border: none;
+}
+
+.input-heading {
+    border-radius: 15px;
+    padding: 0.55em 1em;
+    &:focus {
+        color: $charcoal;
+    }
+    &.input-green {
+        box-shadow: 2px 2px 0px 2px $green;
+        border: 3px $green;
+    }
+    &.input-lilac {
+        box-shadow: 2px 2px 0px 2px $lilac;
+        border: 3px $lilac;
+    }
+    &.input-pink {
+        box-shadow: 2px 2px 0px 2px $pink;
+        border: 3px $pink;
+    }
+    &.input-yellow {
+        box-shadow: 2px 2px 0px 2px $yellow;
+        border: 3px $yellow;
+    }
+    &.input-black {
+        border: 3px $black;
+    }
+}
+
+.input-side {
+    padding: 0.85em 1em;
+    border-radius: 5px;
+    &.input-green {
+        border-left: 3px solid $green;
+    }
+    &.input-lilac {
+        border-left: 3px solid $lilac;
+    }
+    &.input-pink {
+        border-left: 3px solid $pink;
+    }
+    &.input-yellow {
+        border-left: 3px solid $yellow;
+    }
+    &.input-black {
+        border-left: 3px solid $black;
+    }
+}
