@@ -4,6 +4,7 @@ input {
     font-family: $Roboto;
     font-weight: 700;
     color: $charcoalsemi;
+    position: relative;
     border: none;
 }
 
@@ -13,6 +14,7 @@ input {
     &:focus {
         color: $charcoal;
     }
+
     &.input-green {
         box-shadow: 2px 2px 0px 2px $green;
         border: 3px $green;
@@ -34,9 +36,16 @@ input {
     }
 }
 
+.input-mini {
+    width: 50px;
+}
+
 .input-side {
     padding: 0.85em 1em;
     border-radius: 5px;
+    &:focus {
+        color: $charcoal;
+    }
     &.input-green {
         border-left: 3px solid $green;
     }
