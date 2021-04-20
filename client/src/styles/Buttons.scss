@@ -1,0 +1,30 @@
+@import 'index.scss';
+
+.btn-simple {
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 0.55em 1em;
+    box-shadow: 1px 1px 0px 1px $black;
+    border: 3px solid $black;
+    font-weight: 900;
+    color: $black;
+    &:hover {
+        color: $charcoal;
+    }
+
+    &.btn-green {
+        background-color: $green;
+    }
+    &.btn-lilac {
+        background-color: $lilac;
+    }
+    &.btn-pink {
+        background-color: $pink;
+    }
+    &.btn-yellow {
+        background-color: $yellow;
+    }
+    &.btn-black {
+        background-color: $black;
+    }
+}
