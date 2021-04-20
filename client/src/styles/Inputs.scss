@@ -16,28 +16,34 @@ input {
     }
 
     &.input-green {
+        border: 3px solid $green;
         box-shadow: 2px 2px 0px 2px $green;
-        border: 3px $green;
     }
     &.input-lilac {
+        border: 3px solid $lilac;
         box-shadow: 2px 2px 0px 2px $lilac;
-        border: 3px $lilac;
     }
     &.input-pink {
+        border: 3px solid $pink;
         box-shadow: 2px 2px 0px 2px $pink;
-        border: 3px $pink;
     }
     &.input-yellow {
+        border: 3px solid $yellow;
         box-shadow: 2px 2px 0px 2px $yellow;
-        border: 3px $yellow;
     }
     &.input-black {
-        border: 3px $black;
+        border: 3px solid $black;
+        box-shadow: 2px 2px 0px 2px $black;
     }
 }
 
-.input-mini {
+.input-icon {
     width: 50px;
+    &::placeholder {
+        font-family: 'Font Awesome 5 Free';
+        font-size: 1.5em;
+        text-align: center;
+    }
 }
 
 .input-side {
