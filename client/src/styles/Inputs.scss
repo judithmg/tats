@@ -1,4 +1,4 @@
-@import 'index.scss'; //input with heading
+@import 'index.scss';
 
 input {
     font-family: $Roboto;
@@ -53,18 +53,18 @@ input {
         color: $charcoal;
     }
     &.input-green {
-        border-left: 3px solid $green;
+        border-left: 4px solid $green;
     }
     &.input-lilac {
-        border-left: 3px solid $lilac;
+        border-left: 4px solid $lilac;
     }
     &.input-pink {
-        border-left: 3px solid $pink;
+        border-left: 4px solid $pink;
     }
     &.input-yellow {
-        border-left: 3px solid $yellow;
+        border-left: 4px solid $yellow;
     }
     &.input-black {
-        border-left: 3px solid $black;
+        border-left: 4px solid $black;
     }
 }

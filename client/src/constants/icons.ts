@@ -5,6 +5,11 @@ const icons = {
     skull: '&#xF54c;',
     syringe: '&#xF48e;',
     palette: '&#xF53f;',
+    heart: '&#xF004;',
+    map: '&#xF3c5;',
+    share: '&#xF1e0;',
+    comment: '&#xF27a;',
+    hash: '&#xF3ef;',
 };
 
 export default icons;
