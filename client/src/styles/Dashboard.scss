@@ -1,0 +1,16 @@
+@import 'index.scss';
+
+.dashboard-component {
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: $green;
+    div {
+        @include flex(column, center, center);
+    }
+}
+
+.dashboard-post {
+    margin: 10px 0;
+}

@@ -1,0 +1,21 @@
+@import 'index.scss';
+
+nav {
+    @include flex(row, space-around, center);
+    height: 4rem;
+    background-color: $pink;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    span {
+        cursor: pointer;
+        color: white;
+        font-size: 2rem;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

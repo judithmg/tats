@@ -1,0 +1,25 @@
+@import 'index.scss';
+
+.login-component {
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: $lilac;
+    div {
+        margin: 0 10px;
+        @include flex(column, center, flex-start);
+        input {
+            width: 15rem;
+            margin: 10px 0;
+        }
+        label {
+            color: $white;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        button {
+            margin: 30px 0;
+        }
+    }
+}
