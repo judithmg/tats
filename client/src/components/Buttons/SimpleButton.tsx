@@ -5,12 +5,13 @@ import { Colors } from '../../ts/types';
 interface Props extends Colors {
     classnames?: string | null;
     text: string;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-const SimpleButton = ({ color = 'green', classnames, text }: Props): JSX.Element => {
+const SimpleButton = ({ color = 'green', classnames, text, onClick }: Props): JSX.Element => {
     return (
         <>
-            <button type="button" className={`btn-simple btn-${color} ${classnames}`}>
+            <button onClick={onClick} type="button" className={`btn-simple btn-${color} ${classnames}`}>
                 {text}
             </button>
         </>

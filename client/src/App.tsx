@@ -1,48 +1,25 @@
 import React from 'react';
-import InputWithHeading from './components/Inputs/InputRound';
-import InputSideBorder from './components/Inputs/InputSideBorder';
-import InputIcon from './components/Inputs/InputIcon';
-import SimpleButton from './components/Buttons/SimpleButton';
-import TattooPicCard from './components/Cards/TattooPicCard';
-import TattooPost from './components/Cards/TattooPost';
-import KeywordsCard from './components/Cards/KeywordsCard';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './pages/User/Login';
+import Playground from './pages/playground';
+import Dashboard from './pages/Dashboard';
+import Navbar from './pages/Navbar';
+import AddTattoo from './pages/AddTattoo';
 import './styles/App.scss';
 
 const App = (): JSX.Element => {
     return (
         <>
-            <KeywordsCard color={'green'} />
-            <p></p>
-            <InputSideBorder color={'green'} placeholder={'Ssssup'} />
-            <p></p>
-            <SimpleButton color={'green'} text="Add" />
-            <SimpleButton color={'lilac'} text="Submit" />
-            <SimpleButton color={'pink'} text="Login" />
-            <p></p>
-            <TattooPicCard
-                color={'green'}
-                src={'http://www.martaltes.com/wp-content/uploads/2020/09/What-is-Joker-Tattoo.jpg'}
-            />
-            <TattooPicCard
-                color={'pink'}
-                src={'http://www.martaltes.com/wp-content/uploads/2020/09/What-is-Joker-Tattoo.jpg'}
-            />
-            <TattooPicCard
-                color={'lilac'}
-                src={'http://www.martaltes.com/wp-content/uploads/2020/09/What-is-Joker-Tattoo.jpg'}
-            />
-            <p></p>
-            <TattooPost
-                color={'lilac'}
-                src={'http://www.martaltes.com/wp-content/uploads/2020/09/What-is-Joker-Tattoo.jpg'}
-                comments={10}
-            />
-            <p></p>
-            <InputIcon color={'yellow'} placeholder={<>&#xF002;</>} />
-            <p></p>
-            <InputSideBorder color={'pink'} placeholder="Tattoo title" />
-            <p></p>
-            <InputWithHeading color={'lilac'} placeholder="Something random" />
+            <Router>
+                <Switch>
+                    <Route path="/addtattoo" component={AddTattoo} />
+                    <Route path="/dashboard" component={Dashboard} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/playground" component={Playground} />
+                    <Route path="/" />
+                </Switch>
+                <Navbar />
+            </Router>
         </>
     );
 };
