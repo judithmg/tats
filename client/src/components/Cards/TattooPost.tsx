@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
+import { Colors } from '../../ts/types';
 import TattooPicCard from './TattooPicCard';
 import '../../styles/TattooPost.scss';
 
-interface Props {
-    color?: string;
+interface Props extends Colors {
     src: string;
     alt?: string;
     classnames?: string;

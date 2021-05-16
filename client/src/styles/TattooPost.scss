@@ -3,9 +3,11 @@
 .tattoo-post {
     @include flex(column, flex-start, center);
     border-radius: 10px;
-    width: 170px;
+    width: 80%;
+    height: 100%;
     border: 3px solid $black;
     background-color: $white;
+    position: relative;
     .tattoo-post-btns {
         margin: 15px 0;
         @include flex(row, flex-start, flex-start);

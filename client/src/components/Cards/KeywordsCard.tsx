@@ -10,7 +10,7 @@ interface Props extends Colors {
 
 const KeywordsCard: FC<Props> = ({ classnames = '' }) => {
     return (
-        <div className={`keywords`}>
+        <div className={`keywords ${classnames}`}>
             <h2>Keywords</h2>
             <InputRound color="lilac" placeholder="Add keywords..." />
             <p>
