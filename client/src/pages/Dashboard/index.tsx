@@ -18,17 +18,15 @@ const DashboardComponent: React.FC = () => {
     const color = ['green', 'lilac', 'pink', 'yellow'];
     return (
         <section className="dashboard-component">
-            <div>
-                {tattoos &&
-                    tattoos.map((tattoo) => (
-                        <TattooPost
-                            src={tattoo}
-                            color={color[Math.floor(Math.random() * (color.length - 1 - 0 + 1)) + 0]}
-                            key={Math.random()}
-                            classnames="dashboard-post"
-                        />
-                    ))}
-            </div>
+            {tattoos &&
+                tattoos.map((tattoo) => (
+                    <TattooPost
+                        src={tattoo}
+                        //color={color[Math.floor(Math.random() * (color.length - 1 - 0 + 1)) + 0]}
+                        key={Math.random()}
+                        classnames="dashboard-post"
+                    />
+                ))}
         </section>
     );
 };
