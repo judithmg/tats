@@ -4,11 +4,12 @@
     @include flex(column, center, center);
     border-radius: 10px;
     width: 80vw;
-    border: 3px solid $black;
+    border: 3px solid $charcoal;
     background-color: $white;
     .tattoo-post-btns {
         margin: 2rem 0;
-        @include flex(row, flex-start, flex-start);
+        width: 100%;
+        @include flex(row, space-around, flex-start);
         button {
             @include flex(column, center, center);
             span {
@@ -19,7 +20,7 @@
             margin: 1px 10px;
             color: $charcoal;
             font-family: 'Font Awesome 5 Free';
-            font-size: 1.3em;
+            font-size: 2rem;
             font-weight: 700;
             border: none;
             background-color: transparent;
