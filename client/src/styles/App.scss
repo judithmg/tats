@@ -1,10 +1,14 @@
 @import './index';
 
-body {
+* {
     font-family: $Roboto;
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: $black;
 }
 
 a {

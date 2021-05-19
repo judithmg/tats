@@ -1,0 +1,19 @@
+@import './index';
+
+.popup-header {
+    @include flex(row, space-between, center);
+    width: 100%;
+    h2 {
+        color: $charcoal;
+        font-size: 1.3rem;
+    }
+    span {
+        cursor: pointer;
+        font-family: 'Font Awesome 5 Free';
+        font-size: 1.6rem;
+        color: $charcoalsemi;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

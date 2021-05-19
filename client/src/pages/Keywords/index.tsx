@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import InputRound from '../Inputs/InputRound';
-import '../../styles/KeywordsCard.scss';
+import InputRound from '../../components/Inputs/InputRound';
+import '../../styles/Keywords.scss';
+import Header from '../../components/Headers/Popup';
 
 import { Colors } from '../../ts/types';
 
@@ -8,10 +9,10 @@ interface Props extends Colors {
     classnames?: string;
 }
 
-const KeywordsCard: FC<Props> = ({ classnames = '' }) => {
+const Keywords: FC<Props> = ({ classnames = '' }) => {
     return (
-        <div className={`keywords`}>
-            <h2>Keywords</h2>
+        <div className={`keywords ${classnames}`}>
+            <Header title="Keywords" />
             <InputRound color="lilac" placeholder="Add keywords..." />
             <p>
                 <span>&#xF3ef;</span>Metallica
@@ -35,4 +36,4 @@ const KeywordsCard: FC<Props> = ({ classnames = '' }) => {
     );
 };
 
-export default KeywordsCard;
+export default Keywords;

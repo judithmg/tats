@@ -5,13 +5,16 @@ import InputIcon from '../components/Inputs/InputIcon';
 import SimpleButton from '../components/Buttons/SimpleButton';
 import TattooPicCard from '../components/Cards/TattooPicCard';
 import TattooPost from '../components/Cards/TattooPost';
-import KeywordsCard from '../components/Cards/KeywordsCard';
+import Keywords from '../pages/Keywords';
+import YourAppointment from '../pages/YourAppointment';
 import '../styles/App.scss';
 
 const Playground = (): JSX.Element => {
     return (
-        <>
-            <KeywordsCard color={'green'} />
+        <p>
+            <Keywords color={'green'} />
+            <p></p>
+            <YourAppointment />
             <p></p>
             <InputSideBorder color={'green'} placeholder={'Ssssup'} />
             <p></p>
@@ -43,7 +46,7 @@ const Playground = (): JSX.Element => {
             <InputSideBorder color={'pink'} placeholder="Tattoo title" />
             <p></p>
             <InputWithHeading color={'lilac'} placeholder="Something random" />
-        </>
+        </p>
     );
 };
 

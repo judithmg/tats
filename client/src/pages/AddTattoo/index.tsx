@@ -12,7 +12,7 @@ const AddTattoo: React.FC = () => {
         console.log('yooo');
     }
     return (
-        <section className="add-component">
+        <section className="add__component">
             <div>
                 <InputRound color="lilac" classnames="add__input" placeholder="Title" />
                 <InputRound color="lilac" classnames="add__input" placeholder="Artist" />
