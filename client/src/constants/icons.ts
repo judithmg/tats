@@ -1,6 +1,7 @@
 const icons = {
     bill: '&#xF53a;',
     calendar: '&#xF073;',
+    checkbox: '&#xf14a;',
     clock: '&#xf2f2;',
     close: '&#xf057;',
     comment: '&#xF27a;',
@@ -14,6 +15,7 @@ const icons = {
     search: '&#xf002;',
     share: '&#xF1e0;',
     skull: '&#xF54c;',
+    square: '&#xf0c8;',
     star: '&#xF005;',
     syringe: '&#xF48e;',
     user: '&#xf007;',
