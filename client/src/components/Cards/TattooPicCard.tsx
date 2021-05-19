@@ -12,7 +12,7 @@ interface Props extends Colors {
 const TattooPicCard: FC<Props> = ({ src, alt = 'tattoo pic', color = 'green', classnames = '' }) => {
     return (
         <>
-            <div className={`pic-${color}`}>
+            <div className={`tattoo-pic-${color} tattoo-pic-wrapper`}>
                 <img src={src} alt={alt} className={`${classnames} pic-tattoo`} />
             </div>
         </>

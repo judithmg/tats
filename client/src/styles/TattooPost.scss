@@ -1,15 +1,13 @@
 @import 'index.scss';
 
 .tattoo-post {
-    @include flex(column, flex-start, center);
+    @include flex(column, center, center);
     border-radius: 10px;
-    width: 80%;
-    height: 100%;
+    width: 80vw;
     border: 3px solid $black;
     background-color: $white;
-    position: relative;
     .tattoo-post-btns {
-        margin: 15px 0;
+        margin: 2rem 0;
         @include flex(row, flex-start, flex-start);
         button {
             @include flex(column, center, center);
