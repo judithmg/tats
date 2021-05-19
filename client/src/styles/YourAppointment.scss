@@ -1,0 +1,28 @@
+@import 'index.scss';
+
+.appointment {
+    @include flex(column, center, flex-start);
+    padding: 10px;
+    width: 300px;
+    border: 3px solid $lilac;
+    background-color: $green;
+    border-radius: 10px;
+    font-weight: 700;
+
+    input {
+        &::placeholder {
+            font-size: 0.8em;
+        }
+        margin-bottom: 10px;
+    }
+    p {
+        color: $charcoal;
+        margin: 0.5rem;
+        span {
+            font-family: 'Font Awesome 5 Free';
+            margin: 0 0.2rem;
+            font-weight: 700;
+            color: $lilac;
+        }
+    }
+}
