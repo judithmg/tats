@@ -8,6 +8,14 @@
     background-color: $green;
     border-radius: 10px;
     font-weight: 700;
+    .keywords-btn {
+        @include flex(column, flex-end, flex-end);
+        width: 100%;
+        button {
+            font-size: 1rem;
+            margin: 1rem;
+        }
+    }
 
     input {
         &::placeholder {

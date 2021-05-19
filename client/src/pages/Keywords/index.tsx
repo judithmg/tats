@@ -4,6 +4,7 @@ import '../../styles/Keywords.scss';
 import Header from '../../components/Headers/Popup';
 
 import { Colors } from '../../ts/types';
+import SimpleButton from '../../components/Buttons/SimpleButton';
 
 interface Props extends Colors {
     classnames?: string;
@@ -32,6 +33,9 @@ const Keywords: FC<Props> = ({ classnames = '' }) => {
             <p>
                 <span>&#xF3ef;</span>Skull
             </p>
+            <div className="keywords-btn">
+                <SimpleButton text="Add" color="lilac" />
+            </div>
         </div>
     );
 };
