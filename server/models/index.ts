@@ -1,7 +1,7 @@
-const Tattoos = require("./tattoos");
+const Tattoo = require("./tattoos");
 
 const models = {
-  Tattoos,
+  Tattoo,
 };
 
 module.exports = models;
